@@ -38,6 +38,7 @@ const Experience = () => {
                   {experience.company}
                 </span>
               </h6>
+              <div className="flex flex-wrap">      
               {experience.technologies.map((tech, index) => (
                 <span
                   key={index}
@@ -46,6 +47,7 @@ const Experience = () => {
                   {tech}
                 </span>
               ))}
+              </div>
             </motion.div>
           </div>
         ))}
